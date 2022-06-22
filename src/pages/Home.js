@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Crypto } from '../components';
-import { getData } from '../redux/crypto/cryptoSlice';
+import { getData, selectFilteredCrypto } from '../redux/crypto/cryptoSlice';
 import '../index.css';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     dispatch(getData());
   }, []);
-  const cryptoList = useSelector((state) => state.cryptoReducer);
+  const cryptoList = useSelector(selectFilteredCrypto);
 
   return (
     <div>
