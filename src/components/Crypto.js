@@ -8,7 +8,7 @@ const Crypto = (props) => {
   const { name, value, url } = props;
   return (
     <div className={styles.container}>
-      <Link to={`/${url}`}>
+      <Link to={`/currency/${url}`}>
         <MdArrowForward />
       </Link>
       <span>{name}</span>
