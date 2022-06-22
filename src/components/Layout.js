@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, Outlet, useParams } from 'react-router-dom';
-import { FcHome, FcSearch } from 'react-icons/fc';
+import { FcHome } from 'react-icons/fc';
 import styles from './styles/Layout.module.css';
+import Search from './Search';
 
 const Layout = () => {
   const params = useParams();
@@ -12,10 +13,7 @@ const Layout = () => {
           <FcHome />
         </Link>
         <header className="titleNav">{params.id || 'CryptoBazaar'}</header>
-        <span className="searchNav">
-          <input className="searchInput" />
-          <FcSearch className="searchLogo" />
-        </span>
+        <Search />
       </nav>
 
       <div className="content">

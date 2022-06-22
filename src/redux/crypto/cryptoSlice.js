@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { selectSearchTerm } from '../search/searchSlice';
 
 axios.defaults.baseURL = 'https://api.coincap.io/v2/assets';
 
@@ -14,9 +15,7 @@ export const getData = createAsyncThunk('crpto/getData', async () => {
 const options = {
   name: 'crypto',
   initialState: [],
-  reducer: {
-    placeholder: () => {},
-  },
+  reducer: {},
   extraReducers: {
     [getData.fulfilled]: (state, action) => action.payload,
   },
@@ -24,6 +23,13 @@ const options = {
 
 const cryptoSlice = createSlice(options);
 
-const { actions, reducer } = cryptoSlice;
-export const { add } = actions;
+export const selectCrypto = (state) => state.crypto;
+export const selectFilteredCrypto = (state) => {
+  const allCrypto = selectCrypto(state);
+  const searchTerm = selectSearchTerm(state);
+
+  return allCrypto.filter((crypto) => crypto.id.toLowerCase().includes(searchTerm.toLowerCase()));
+};
+
+const { reducer } = cryptoSlice;
 export default reducer;

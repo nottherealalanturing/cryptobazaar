@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 import cryptoReducer from './crypto/cryptoSlice';
+import searchReducer from './search/searchSlice';
 
 const reducers = {
-  cryptoReducer,
+  crypto: cryptoReducer,
+  search: searchReducer,
 };
 
 const store = configureStore({
