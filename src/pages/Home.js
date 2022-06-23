@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Crypto } from '../components';
+import { Crypto, Herocrypto } from '../components';
 import { getData, selectFilteredCrypto } from '../redux/crypto/cryptoSlice';
 import '../index.css';
 
@@ -13,10 +13,16 @@ const Home = () => {
 
   return (
     <div>
-      <div className="hero">HERO IMAGE</div>
+      <Herocrypto
+        name="Bitcoin"
+        id="bitcoin"
+        url="bitcoin"
+        symbol="btc"
+        value="20455.6848680241689745"
+      />
       <span>CRYPTO LIST</span>
       <div className="cryptoList">
-        {cryptoList.map((crypto) => (
+        {cryptoList.slice(1).map((crypto) => (
           <Crypto
             name={crypto.name}
             id={crypto.id}

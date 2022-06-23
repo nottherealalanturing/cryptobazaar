@@ -1,0 +1,26 @@
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: flex-end;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 10% 50%;
+}
+
+.name,
+.value {
+  display: block;
+  line-height: 40px;
+  font-weight: 700;
+}
