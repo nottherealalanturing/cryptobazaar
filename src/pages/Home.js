@@ -21,6 +21,7 @@ const Home = () => {
             name={crypto.name}
             id={crypto.id}
             url={crypto.id}
+            symbol={crypto.symbol.toLowerCase()}
             value={crypto.priceUsd}
             key={crypto.id}
           />

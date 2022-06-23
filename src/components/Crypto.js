@@ -5,15 +5,22 @@ import { MdArrowForward } from 'react-icons/md';
 import styles from './styles/Crypto.module.css';
 
 const Crypto = (props) => {
-  const { name, value, url } = props;
+  const { name, value, url, symbol } = props;
   return (
-    <div className={styles.container}>
-      <Link to={`/currency/${url}`}>
+    <Link to={`/currency/${url}`} className={styles.link}>
+      <div
+        className={styles.container}
+        style={{
+          backgroundImage:
+            `url("https://cryptologos.cc/logos/${url}-${symbol}-logo.png?v=022")` ||
+            url('https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=022'),
+        }}
+      >
         <MdArrowForward />
-      </Link>
-      <span>{name}</span>
-      <span>{value}</span>
-    </div>
+        <span className={styles.name}>{name}</span>
+        <span className={styles.value}>{value}</span>
+      </div>
+    </Link>
   );
 };
 
@@ -21,6 +28,7 @@ Crypto.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
 };
 
 export default Crypto;
