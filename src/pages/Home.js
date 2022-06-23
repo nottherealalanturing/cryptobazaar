@@ -18,7 +18,7 @@ const Home = () => {
         id="bitcoin"
         url="bitcoin"
         symbol="btc"
-        value="20455.6848680241689745"
+        value="20827.4673277614199303"
       />
       <span>CRYPTO LIST</span>
       <div className="cryptoList">

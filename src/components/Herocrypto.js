@@ -14,7 +14,9 @@ const Herocrypto = (props) => {
         }}
       >
         <span className={styles.name}>{name}</span>
-        <span className={styles.value}>{value}</span>
+        <span className={styles.value}>
+          {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value)}
+        </span>
       </div>
     </Link>
   );
