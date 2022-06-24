@@ -11,7 +11,7 @@ const Crypto = (props) => {
       <div
         className={styles.container}
         style={{
-          backgroundImage: `url("https://cryptologos.cc/logos/${url}-${symbol}-logo.png?v=022")`,
+          backgroundImage: `url("https://assets.coincap.io/assets/icons/${symbol}@2x.png")`,
         }}
       >
         <MdArrowForward />

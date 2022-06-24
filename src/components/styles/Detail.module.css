@@ -1,6 +1,37 @@
-.navbar {
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.detail {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.title {
+  display: flex;
   align-items: center;
-  padding: 20px;
+  gap: 5px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  padding: 10px;
+}
+
+ul li:nth-child(even) {
+  background-image: azure;
+  width: 100vw;
+  text-align: center;
+}
+
+ul li:nth-child(odd) {
+  background: blueviolet;
+  width: 100vw;
+  text-align: center;
 }
