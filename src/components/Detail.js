@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectCrypto } from '../redux/crypto/cryptoSlice';
 import styles from './styles/Detail.module.css';
+import HistoryChart from './HistoryChart';
 
 const Detail = () => {
   let coin;
@@ -39,6 +40,7 @@ const Detail = () => {
         </li>
         <li>{`Change(24Hr): ${changePer}`}</li>
       </ul>
+      <HistoryChart id={id} />
     </div>
   );
 };
