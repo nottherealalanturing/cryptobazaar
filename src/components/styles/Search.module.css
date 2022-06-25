@@ -1,6 +1,17 @@
-.navbar {
+.searchNav {
   display: flex;
-  justify-content: space-between;
+  border: 1px solid #dbdffd;
+  border-radius: 3px;
+  padding: 5px;
   align-items: center;
-  padding: 20px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+  color: #dbdffd;
+}
+
+.searchInput:focus {
+  outline: none;
 }

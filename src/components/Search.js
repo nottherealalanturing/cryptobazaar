@@ -13,7 +13,7 @@ const Search = () => {
   };
 
   return (
-    <span className="searchNav">
+    <span className={styles.searchNav}>
       <input
         className={styles.searchInput}
         id="search"

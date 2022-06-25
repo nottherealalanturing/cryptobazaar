@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=lato:wght@400;500;600;700&display=swap');
+
 *,
 *::before,
 *::after {
@@ -7,8 +9,8 @@
 }
 
 body {
-  margin: 0;
   font-family:
+    lato,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -22,6 +24,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #646fd4;
 }
 
 code {
@@ -30,11 +33,7 @@ code {
 
 .cryptoList {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
-
-  /* padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 20%;
-  padding-right: 20%; */
+  padding: 10px;
 }

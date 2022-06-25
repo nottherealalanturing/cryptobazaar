@@ -13,7 +13,7 @@ const Layout = () => {
           <FcHome />
         </Link>
         <header className="titleNav">{params.id || 'CryptoBazaar'}</header>
-        <Search />
+        {params.id ? null : <Search />}
       </nav>
 
       <div className="content">

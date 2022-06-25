@@ -1,6 +1,40 @@
-.navbar {
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.detail {
   display: flex;
-  justify-content: space-between;
+  justify-self: center;
+  gap: 25px;
+  margin: 15px;
+}
+
+.title {
+  display: flex;
   align-items: center;
-  padding: 20px;
+  gap: 5px;
+  color: #dbdffd;
+}
+
+.list {
+  list-style-type: none;
+  color: #dbdffd;
+}
+
+.list li {
+  padding: 10px;
+}
+
+ul li:nth-child(even) {
+  background: #9ba3eb;
+  width: 100vw;
+  text-align: center;
+}
+
+ul li:nth-child(odd) {
+  background: #969dd1;
+  width: 100vw;
+  text-align: center;
 }

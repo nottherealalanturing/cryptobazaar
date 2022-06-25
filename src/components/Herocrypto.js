@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { MdArrowForward } from 'react-icons/md';
-import styles from './styles/Crypto.module.css';
+import styles from './styles/Herocrypto.module.css';
 
-const Crypto = (props) => {
+const Herocrypto = (props) => {
   const {
     name, value, url, symbol,
   } = props;
@@ -16,7 +15,6 @@ const Crypto = (props) => {
           backgroundImage: `url("https://assets.coincap.io/assets/icons/${symbol}@2x.png")`,
         }}
       >
-        <MdArrowForward />
         <span className={styles.name}>{name}</span>
         <span className={styles.value}>
           {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value)}
@@ -26,11 +24,18 @@ const Crypto = (props) => {
   );
 };
 
-Crypto.propTypes = {
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  symbol: PropTypes.string.isRequired,
+Herocrypto.propTypes = {
+  name: PropTypes.string,
+  value: PropTypes.string,
+  url: PropTypes.string,
+  symbol: PropTypes.string,
 };
 
-export default Crypto;
+Herocrypto.defaultProps = {
+  name: '',
+  value: '',
+  url: '',
+  symbol: '',
+};
+
+export default Herocrypto;
