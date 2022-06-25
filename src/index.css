@@ -37,3 +37,11 @@ code {
   gap: 20px;
   padding: 10px;
 }
+
+.cryptoList a:nth-child(even) {
+  background-color: #9ba3eb;
+}
+
+.cryptoList a:nth-child(odd) {
+  background-color: #646fd4;
+}

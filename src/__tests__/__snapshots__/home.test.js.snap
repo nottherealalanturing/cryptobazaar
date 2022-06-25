@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Components Renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "padding": "10px 10px 0 10px",
+    }
+  }
+>
+  <a
+    className="link"
+    href="#/currency/bitcoin"
+    onClick={[Function]}
+  >
+    <div
+      className="container"
+      style={
+        Object {
+          "backgroundImage": "url(\\"https://assets.coincap.io/assets/icons/btc@2x.png\\")",
+        }
+      }
+    >
+      <span
+        className="name"
+      >
+        Bitcoin
+      </span>
+      <span
+        className="value"
+      >
+        $20,827.47
+      </span>
+    </div>
+  </a>
+  <span
+    style={
+      Object {
+        "color": "#dbdffd",
+        "display": "flex",
+      }
+    }
+  >
+    Stats by Rank
+  </span>
+  <div
+    className="cryptoList"
+  />
+</div>
+`;

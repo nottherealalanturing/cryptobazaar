@@ -4,9 +4,6 @@ import { selectSearchTerm } from '../search/searchSlice';
 
 axios.defaults.baseURL = 'https://api.coincap.io/v2/assets';
 
-/* axios.defaults.headers.common['Authorization'] = process.env.TOKEN; */
-/* const baseURL = 'https://api.coincap.io/v2/assets'; */
-
 export const getData = createAsyncThunk('crpto/getData', async () => {
   const response = await axios.get();
   return response.data.data;

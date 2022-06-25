@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 - Run `npm run start` to start the development server.
 - Run `npm run test` to run the tests.
 
-## Authors
+## Author
 
 👤 **Assad Isah**
 
