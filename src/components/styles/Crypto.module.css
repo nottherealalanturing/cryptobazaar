@@ -1,0 +1,26 @@
+.link {
+  text-decoration: none;
+  background-color: #646fd4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  padding: 20px;
+  align-items: flex-end;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: 10% 50%;
+}
+
+.name,
+.value {
+  display: block;
+  line-height: 40px;
+  font-weight: 900;
+  color: #dbdffd;
+  font-size: 3.5vw;
+}
