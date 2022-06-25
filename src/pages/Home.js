@@ -20,7 +20,7 @@ const Home = () => {
         symbol="btc"
         value="20827.4673277614199303"
       />
-      <span>CRYPTO LIST</span>
+      <span>Stats by Rank</span>
       <div className="cryptoList">
         {cryptoList.slice(1).map((crypto) => (
           <Crypto

@@ -12,6 +12,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import styles from './styles/HistoryChart.module.css';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -52,7 +53,7 @@ const HistoryChart = (props) => {
     labels,
     datasets: [
       {
-        label: `${id} History`,
+        label: `${id} history`,
         data: history.newPrice,
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
@@ -61,7 +62,7 @@ const HistoryChart = (props) => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Line options={options} data={data} />
     </div>
   );

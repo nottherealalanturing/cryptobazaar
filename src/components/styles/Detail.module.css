@@ -6,8 +6,9 @@
 
 .detail {
   display: flex;
-  flex-direction: column;
   justify-self: center;
+  gap: 25px;
+  margin: 15px;
 }
 
 .title {
