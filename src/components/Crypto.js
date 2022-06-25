@@ -5,7 +5,9 @@ import { MdArrowForward } from 'react-icons/md';
 import styles from './styles/Crypto.module.css';
 
 const Crypto = (props) => {
-  const { name, value, url, symbol } = props;
+  const {
+    name, value, url, symbol,
+  } = props;
   return (
     <Link to={`/currency/${url}`} className={styles.link}>
       <div

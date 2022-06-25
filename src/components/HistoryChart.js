@@ -39,7 +39,7 @@ const HistoryChart = (props) => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        `https://api.coincap.io/v2/assets/${id}/history?interval=d1`
+        `https://api.coincap.io/v2/assets/${id}/history?interval=d1`,
       );
       const histArray = response.data.data;
       setHistory(getData(histArray.slice(histArray.length - 10)));

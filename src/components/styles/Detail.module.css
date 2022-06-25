@@ -28,7 +28,7 @@
 }
 
 ul li:nth-child(even) {
-  background-image: #9ba3eb;
+  background: #9ba3eb;
   width: 100vw;
   text-align: center;
 }

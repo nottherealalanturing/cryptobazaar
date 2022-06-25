@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import styles from './styles/Herocrypto.module.css';
 
 const Herocrypto = (props) => {
-  const { name, value, url, symbol } = props;
+  const {
+    name, value, url, symbol,
+  } = props;
   return (
     <Link to={`/currency/${url}`} className={styles.link}>
       <div
