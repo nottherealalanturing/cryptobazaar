@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  background-color: #646fd4;
 }
 
 .container {
@@ -16,7 +17,7 @@
   background-repeat: no-repeat;
   background-size: 70px;
   background-position: 10% 50%;
-  width: 30%;
+  width: 50%;
 }
 
 .name,
@@ -24,4 +25,5 @@
   display: block;
   line-height: 40px;
   font-weight: 700;
+  color: #dbdffd;
 }

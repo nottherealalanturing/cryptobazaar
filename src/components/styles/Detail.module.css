@@ -15,10 +15,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  color: #dbdffd;
 }
 
 .list {
   list-style-type: none;
+  color: #dbdffd;
 }
 
 .list li {
@@ -26,13 +28,13 @@
 }
 
 ul li:nth-child(even) {
-  background-image: azure;
+  background-image: #9ba3eb;
   width: 100vw;
   text-align: center;
 }
 
 ul li:nth-child(odd) {
-  background: blueviolet;
+  background: #969dd1;
   width: 100vw;
   text-align: center;
 }

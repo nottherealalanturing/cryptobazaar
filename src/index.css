@@ -9,11 +9,11 @@
 }
 
 body {
-  margin: 0;
   font-family: lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #646fd4;
 }
 
 code {
@@ -22,6 +22,7 @@ code {
 
 .cryptoList {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  padding: 10px
 }

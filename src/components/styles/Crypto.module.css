@@ -1,5 +1,6 @@
 .link {
   text-decoration: none;
+  background-color: #646fd4;
 }
 
 .container {
@@ -19,5 +20,7 @@
 .value {
   display: block;
   line-height: 40px;
-  font-weight: 700;
+  font-weight: 900;
+  color: #dbdffd;
+  font-size: 3.5vw;
 }

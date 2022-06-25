@@ -1,6 +1,6 @@
 .searchNav {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #dbdffd;
   border-radius: 3px;
   padding: 5px;
   align-items: center;
@@ -8,6 +8,8 @@
 
 .searchInput {
   border: none;
+  background-color: transparent;
+  color: #dbdffd;
 }
 
 .searchInput:focus {

@@ -42,7 +42,7 @@ const HistoryChart = (props) => {
         `https://api.coincap.io/v2/assets/${id}/history?interval=d1`
       );
       const histArray = response.data.data;
-      setHistory(getData(histArray.slice(histArray.length - 20)));
+      setHistory(getData(histArray.slice(histArray.length - 10)));
     }
     fetchData();
   }, []);
@@ -53,7 +53,7 @@ const HistoryChart = (props) => {
     labels,
     datasets: [
       {
-        label: `${id} history`,
+        label: `${id} history in the last 10 days`,
         data: history.newPrice,
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
