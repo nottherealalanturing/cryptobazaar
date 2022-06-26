@@ -16,8 +16,6 @@ This is a React app that uses the [Coin-Cap API](https://docs.coincap.io/). Disp
 
 [Live Demo Link](https://cryptobazaar.netlify.app/)
 
-## Video Link
-
 [Video Link](https://www.loom.com/share/9e07e371a57d400a9ed1025941e8abff)
 
 ## Getting Started
